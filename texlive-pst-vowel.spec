@@ -47,6 +47,7 @@ depends on use of pstricks.
 %doc %{_texmfdistdir}/doc/latex/pst-vowel/README
 %doc %{_texmfdistdir}/doc/latex/pst-vowel/pst-vowel.pdf
 %doc %{_texmfdistdir}/doc/latex/pst-vowel/pst-vowel.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +58,5 @@ depends on use of pstricks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
