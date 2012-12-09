@@ -48,3 +48,21 @@ depends on use of pstricks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-3
++ Revision: 770238
+- Update to latest upstream package
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
++ Revision: 755503
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
++ Revision: 719406
+- texlive-pst-vowel
+- texlive-pst-vowel
+- texlive-pst-vowel
+- texlive-pst-vowel
+
