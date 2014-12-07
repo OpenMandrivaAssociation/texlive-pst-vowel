@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-pst-vowel
 Version:	1.0
-Release:	9
+Release:	10
 Summary:	Enable arrows showing diphthongs on vowel charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-vowel
