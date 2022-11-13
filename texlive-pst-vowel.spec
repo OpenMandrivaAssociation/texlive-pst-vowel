@@ -1,18 +1,12 @@
-# revision 25228
-# category Package
-# catalog-ctan /macros/latex/contrib/pst-vowel
-# catalog-date 2012-01-28 08:48:38 +0100
-# catalog-license lppl
-# catalog-version 1.0
 Name:		texlive-pst-vowel
-Version:	1.0
-Release:	13
+Version:	25228
+Release:	1
 Summary:	Enable arrows showing diphthongs on vowel charts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-vowel
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vowel.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vowel.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vowel.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vowel.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ show relationships such as diphthong membership. The package
 depends on use of pstricks.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,28 +35,10 @@ depends on use of pstricks.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-3
-+ Revision: 770238
-- Update to latest upstream package
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 755503
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 719406
-- texlive-pst-vowel
-- texlive-pst-vowel
-- texlive-pst-vowel
-- texlive-pst-vowel
-
