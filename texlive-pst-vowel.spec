@@ -3,7 +3,7 @@ Version:	25228
 Release:	2
 Summary:	Enable arrows showing diphthongs on vowel charts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pst-vowel
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/pst-vowel
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vowel.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-vowel.doc.r%{version}.tar.xz
